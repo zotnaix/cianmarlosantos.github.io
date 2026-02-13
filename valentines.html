@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Message for You ❤️</title>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-pink: #ffb7b2;
+            --deep-rose: #ff4d6d;
+            --bg-cream: #fff9f5;
+        }
+
+        body {
+            background-color: var(--bg-cream);
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 400px;
+            width: 100%;
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(255, 183, 178, 0.3);
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            color: var(--deep-rose);
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        #typewriter {
+            line-height: 1.8;
+            color: #444;
+            font-size: 1.05rem;
+            min-height: 200px; 
+            text-align: left;
+            margin-bottom: 20px;
+            white-space: pre-wrap; /* Preserves line breaks */
+        }
+
+        #pilates-btn {
+            background-color: var(--deep-rose);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            border-radius: 50px;
+            cursor: pointer;
+            display: none; /* Hidden until typing is done */
+            margin: 20px auto;
+            transition: transform 0.2s;
+            box-shadow: 0 4px 15px rgba(255, 77, 109, 0.3);
+        }
+
+        #pilates-btn:active {
+            transform: scale(0.95);
+        }
+
+        .gift-box {
+            display: none;
